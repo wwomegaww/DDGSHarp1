@@ -39,14 +39,14 @@ namespace TeamMotivator
         static void setupMenu()
         {
             Settings = new Menu("TeamMotivator", "TeamMotivator", true);
-            Settings.AddItem(new MenuItem("sayGreeting", "Say Greeting").SetValue(true));
-            Settings.AddItem(new MenuItem("sayGreetingAllChat", "Say Greeting In All Chat").SetValue(true));
-            Settings.AddItem(new MenuItem("sayGreetingDelayMin", "Min Greeting Delay").SetValue(new Slider(30, 10, 120)));
-            Settings.AddItem(new MenuItem("sayGreetingDelayMax", "Max Greeting Delay").SetValue(new Slider(90, 10, 120)));
-            Settings.AddItem(new MenuItem("sayCongratulate", "Congratulate players").SetValue(true));
-            Settings.AddItem(new MenuItem("sayCongratulateDelayMin", "Min Congratulate Delay").SetValue(new Slider(7, 5, 100)));
-            Settings.AddItem(new MenuItem("sayCongratulateDelayMax", "Max Congratulate Delay").SetValue(new Slider(15, 5, 100)));
-            Settings.AddItem(new MenuItem("sayCongratulateInterval", "Minimum Interval between messages").SetValue(new Slider(30, 5, 600)));
+            Settings.AddItem(new MenuItem("sayGreeting", "Greeting").SetValue(true));
+            Settings.AddItem(new MenuItem("sayGreetingAllChat", "All Chat Greeting").SetValue(true));
+            Settings.AddItem(new MenuItem("sayGreetingDelayMin", "Greeting Min Delay").SetValue(new Slider(30, 10, 120)));
+            Settings.AddItem(new MenuItem("sayGreetingDelayMax", "Greeting Max Delay").SetValue(new Slider(90, 10, 120)));
+            Settings.AddItem(new MenuItem("sayCongratulate", "Congratulate Players").SetValue(true));
+            Settings.AddItem(new MenuItem("sayCongratulateDelayMin", "Congratulate Min Delay").SetValue(new Slider(7, 5, 100)));
+            Settings.AddItem(new MenuItem("sayCongratulateDelayMax", "Congratulate Max Delay").SetValue(new Slider(15, 5, 100)));
+            Settings.AddItem(new MenuItem("sayCongratulateInterval", "Interval Between Messages").SetValue(new Slider(30, 5, 600)));
             Settings.AddToMainMenu();
         }
 
@@ -70,8 +70,8 @@ namespace TeamMotivator
 
             Starts = new List<string>
             {
-                "", "oh, ", "that was ",
-                "oh ", "wow ", "wow, "
+                "", " ", "that was ",
+                "  ", "wow ", "wow, "
             };
 
             Endings = new List<string>
@@ -83,9 +83,9 @@ namespace TeamMotivator
 
             Smileys = new List<string>
             {
-                "", " xD",
-                " ;D", " ^^",
-                " :P", " :p"
+                "",
+                " ^^",
+                " :p"
             };
 
             Greetings = new List<string>
