@@ -63,36 +63,36 @@ namespace TeamMotivator
         {
             Messages = new List<string>
             {
-                "gj", "good job", "very gj", "very good job", "wp", "well played",
-                "well", "nicely played", "np", "amazing",
-                "nice", "nice1", "nice one", "well done", "sweet", "good"
+                "gj", "buen trabajo", "ostia", "carreame papi", "izi tutorial", "a todo gas",
+                "bien", "excelente jugada", "ni pedo", "nivel challenger", "genial", "mecanicas",
+                "op", "buena", "niceee", "darles por ostia", "don pepe y sus globos", "acabado", "bien"
             };
 
             Starts = new List<string>
             {
-                "", " ", "that was ",
-                "  ", "wow ", "wow, "
+                "", "alv, ", "eso fue ",
+                "oh ", "wow ", "wow, "
             };
 
             Endings = new List<string>
             {
-                "", " m8", " mate",
-                " friend", " team",  " guys",
-                " friends", " boys", " man"
+                "", " compi", " puerquito",
+                " amigo", " equipo",  " amiguitos del mal",
+                " nenes", " bebes", " destrozachapulines"
             };
 
             Smileys = new List<string>
             {
-                "",
-                " ^^",
-                " :p"
+                "", " xD", " :V", " :v",
+                " ;D", " >.<", " u.U", " ^^",
+                " :P", " :p", " :v", " :o"
             };
 
             Greetings = new List<string>
             {
-                "gl", "good luck", "hf", "have fun", "Good Luck & Have Fun",
-                "Let's Fun", "gl hf", "gl and hf", "gl & hf",
-                "Good Luck, Have Fun", "Let's all have a nice game!"
+                "gl", "buena suerte", "hf", "diviertanse", "Suerte y a divertirse",
+                "A darle conchasumaquina del mal", "gl hf", "gl and hf", "gl & hf",
+                "Suertesita, bebes del mal", "Mi vida... por Aiur!"
             };
         }
 
@@ -163,7 +163,7 @@ namespace TeamMotivator
 
         static void Game_OnGameEnd(EventArgs args)
         {
-            Utility.DelayAction.Add((new Random(Environment.TickCount).Next(100, 1001)), () => Game.Say("/all gg wp"));
+            Utility.DelayAction.Add((new Random(Environment.TickCount).Next(100, 1001)), () => Game.Say("/all gg wp alv :v"));
         }
 
         static void Game_OnGameUpdate(EventArgs args)
